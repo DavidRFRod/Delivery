@@ -1,0 +1,15 @@
+ body{
+            background-color:#42a5f5;
+        }
+        .card {
+            margin-top:100px;
+        }
+
+        .erro {
+            padding: 15px;
+            background-color: #c00;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 0px !important;
+            text-align: center;
+        }
