@@ -72,7 +72,7 @@ function imprimeFormularioCadastro() {
     echo '<div>';
     echo '<br>';
     echo '<label for="naoconcluido">';
-    echo '<input name="status" id="naoconcluido" type="radio" value="Não concluido"/>';
+    echo '<input name="status" id="naoconcluido" type="radio" value="Não concluido" />';
     echo '<span>Não concluído</span>';
     echo '</label>';
     echo '<label for="solicitado">';
@@ -91,11 +91,11 @@ function imprimeFormularioCadastro() {
     echo '<br>';
     echo '<div class="input-field">';
     echo '<label for="valor">Valor</label>';
-    echo '<input type="text"  name="valor" />';
+    echo '<input type="text"  name="valor" required/>';
     echo '</div>';
     echo '<div>';
     echo '<label for="data">Data</label>';
-    echo '<input type="date" name="data"  />';
+    echo '<input type="date" name="data"  required/>';
     echo '</div>';
     echo '<button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar</button>';
     echo ' </form>';
