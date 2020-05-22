@@ -16,9 +16,6 @@ verificaLogin();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Página Inicial</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="endereco.php">Endereços</a>
                     </li>
                     <li class="nav-item">
