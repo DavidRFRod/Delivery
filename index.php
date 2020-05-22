@@ -1,5 +1,5 @@
-<<?php
-include_once './funcoes_autenticar.php';
+<?php
+include_once 'funcoes/funcoes_autenticar.php';
 
 if (taLogado()) {
     header("Location: usuario.php");
@@ -19,20 +19,20 @@ if (taLogado()) {
             <div class="conteiner col s12 l4 offset-l4">
                 <form action="autenticar.php" method="post">
                     <div class="card">
-                        <div class="card-action blue white-text">
+                        <div class="card-action amber darken-4 white-text center-text">
                             <h3>Login</h3>
                         </div>
                         <div class="card-content">
-                            <div class="form-field">
+                            <div class="input-field">
                                 <label for="email">E-mail</label>
                                 <input type="text" id="email" name="email">
                             </div><br>
-                            <div class="form-field">
+                            <div class="input-field">
                                 <label for="senha">Senha</label>
                                 <input type="password" id="senha" name="senha">
                             </div><br>
                             <div class="form-field center-align">
-                                <button class="btn-large blue ">Login</button>
+                                <button class="btn-large amber darken-4 ">Logar</button>
                             </div><br>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <?php
-include_once './funcoes_autenticar.php';
+include_once 'funcoes/funcoes_autenticar.php';
 
 verificaLogin();
 ?>
