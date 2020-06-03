@@ -61,4 +61,7 @@ CREATE TABLE DELIVERY.TBPEDIDO (
     REFERENCES DELIVERY.TBUSUARIO(USUCODIGO)
 ); 
 
+INSERT INTO DELIVERY.TBUSUARIO (usunome,usucpf,usuemail,usutelefone,ususenha,usudatanascimento) 
+VALUES ('David Raphael Freitas Rodrigues','108.338.509-70','davidrapha@gmail.com', '(47) 98823-5578', '123', '19/08/1997')
+
 

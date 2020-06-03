@@ -19,7 +19,7 @@ function cadastrar($sNome, $sCpf, $sEmail, $iTelefone, $sSenha, $sDataNascimento
 }
 
 function alterar($iCodigo, $sNome, $iCpf, $sEmail, $iTelefone, $sSenha, $sDataNascimento) {
-    $sSql = "UPDATE DELIVERY.TBUSUARIO SET usunome='$sNome',usucpf= '$iCpf', usuemail = '$sEmail', usutelefone = $iTelefone, ususenha = '$sSenha', usudatanascimento = '$sDataNascimento' 
+    $sSql = "UPDATE DELIVERY.TBUSUARIO SET usunome='$sNome',usucpf= '$iCpf', usuemail = '$sEmail', usutelefone = '$iTelefone', ususenha = '$sSenha', usudatanascimento = '$sDataNascimento' 
                     WHERE usucodigo = $iCodigo";
     pg_query(getConexao(), $sSql);
 }

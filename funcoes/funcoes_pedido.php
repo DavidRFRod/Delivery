@@ -49,10 +49,10 @@ function imprimeTabela($aTabela) {
         echo '<td>' . $aLinha['pedstatus'] . '</td>';
         echo '<td>' . $aLinha['pedvalor'] . '</td>';
         echo '<td>' . $aLinha['peddata'] . '</td>';
-        echo '<td><a href="pedido.php?acao=deletar&registro=' . $aLinha['pedcodigo'] . '"> 
-                       <button class="btn waves-effect waves-light red darken-4 " type="submit" name="action">Deletar</button></a></td>';
-        echo '<td><a href="altera_pedido.php?acao=alterar&registro=' . $aLinha['pedcodigo'] . "&nome=" . $aLinha['usunome'] . "&status=" . $aLinha['pedstatus'] . "&valor=" . $aLinha['peddata'] . '"> 
-                       <button class="btn waves-effect waves-light blue darken-1" type="submit" name="action">Alterar</button></a></td>';
+        echo '<td><a class="btn waves-effect waves-light red darken-4 " href="pedido.php?acao=deletar&registro=' . $aLinha['pedcodigo'] . '">Deletar</a></td>';
+        echo '<td><a class="btn waves-effect waves-light blue darken-1" href="altera_pedido.php?acao=alterar&registro=' . $aLinha['pedcodigo'] . "&nome=" . $aLinha['usunome'] 
+        . "&status=" . $aLinha['pedstatus'] . "&valor=" . $aLinha['pedvalor'] . "&data=".['peddata'][0].'"> 
+                       Alterar</a></td>';
         echo '</tr>';
     }
     echo '</table>';
